@@ -1,0 +1,16 @@
+## 1. Atualizando saldo com depósito
+    Usamos o operador de atribuição +=. Resultado é R$150.
+
+## 2. Atualizando estoque após venda
+    Usamos o operador de atribuição -=. Resultado é que sobrou 22 produtos em estoque.
+
+## 3. Dobro de pontos 
+    Usamos o operador de atribuição *=. Resultado de pontos após dobrar é de 30.
+
+## 4. Dividindo valor entre pessoas
+    Usamos o operador de atribuição /=. Valor para cada pessoa é de R$ 30.
+
+## 5. Descubra qual palavra aparece no console.
+    Creio que banana, porque o parseInt tenta converter uma string em número, se não conseguir retornará NaN. Já o toLowerCase vai retornar a string completamente em minúsculo.
+
+

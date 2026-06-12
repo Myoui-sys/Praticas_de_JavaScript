@@ -1,0 +1,54 @@
+Lista de Exercícios 1 - UC2 - Dacyrrôse Melo
+
+## 1. Organizando instruções para um sistema de chamada
+
+Inicio
+    Passo 1 - Professor começa a aula;
+    Passo 2 - Professor abre a lista de presença;
+    Passo 3 - Professor anuncia que vai fazer a chamada;
+    Passo 4 - Professor começa a chamada por ordem alfabética; 
+    Passo 5 - Se um aluno não responder a presença, professor coloca falta e continua a chamada;
+    Passo 6 - Se um aluno responder a presença, professor coloca presença e segue para o passo 8;
+    Passo 7 - Se nenhum aluno responder a chamada, professor fecha a lista de presença e encerra aula;
+    Passo 8 - Professor segue até o final da chamada;
+    Passo 9 - Ao encerrar a lista de presença, professor continua sua aula.
+Fim
+
+## 2. Criando um algoritmo para um cadastro de evento
+
+Inicio
+    Passo 1 - Usuário aperta em se cadastrar;
+    Passo 2 - Sistema pede para o usuário informar dados pessoais;
+    Passo 3 - Usuário digita nome, idade e e-mail e envia;
+    Passo 4 - Sistema faz a verificação se os dados foram preenchidos corretamente;
+    Passo 5 - Se a verificação dos dados estiver correta, o sistema confirma a inscrição do participante;
+    Passo 6 - Se a verificação dos dados não estiver correta, o sistema pede para o usuário preencher corretamente e enviar;
+Fim
+
+## 3. Analisando e corrigindo variáveis de um sistema de biblioteca
+
+    1. n e x.
+    2. dias, livro, terminou.
+    3. A sétima linha, onde há "dias = 10;". Porque não podemos atribuir outro valor a variável const.
+    4. var n, var livro.
+        5.
+            const NOME_INSTITUICAO = "Biblioteca Central";
+            let quantidadeLivro = 3;
+            let diasLivroEmprestado = 7;
+            const NOME_LIVRO = "Dom Casmurro";
+            let livroTerminado = false;
+
+            let diasLivroEmprestado = 10;
+
+## 5. Melhorando nome de variáveis
+    1. 
+        let nomeAluno = "Maria";
+        let idadeAluno = "19";
+        let nomeCurso = "Desenvolvedor Front-End";
+        let matriculaAtiva = true;
+        const IDADE_MINIMA = 18;
+        let alunoComIdadeMinima = idadeAluno => IDADE_MINIMA;
+    2. Porque não estamos entendendo o contexto da variável.
+    3. const valor.
+    4. Se o aluno tem a idade mínima de participar do curso.
+    

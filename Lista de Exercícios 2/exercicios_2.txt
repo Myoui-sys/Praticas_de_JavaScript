@@ -1,0 +1,14 @@
+Lista de Exercícios 2 - UC2 - Dacyrrôse Melo
+
+## 1. Identificando os tipos de dados.
+    1. 
+    "Recife", "25", "true" = String
+    25, 10.5 = Number
+    true, false = boolean
+    null = null
+    undefined = undefined
+    2. 25 sem aspas é um dado tipo primitivo Number, 25 com aspas é considerado um texto do tipo string.
+    3. true sem aspas é um dado tipo boolean, true com aspas é considerado um texto do tipo string.
+    4. Faz sentido quando queremos deixar o dado vazio, nulo.
+
+
