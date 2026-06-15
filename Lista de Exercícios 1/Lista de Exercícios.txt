@@ -38,7 +38,7 @@ Fim
             const NOME_LIVRO = "Dom Casmurro";
             let livroTerminado = false;
 
-            let diasLivroEmprestado = 10;
+            diasLivroEmprestado = 10;
 
 ## 5. Melhorando nome de variáveis
     1. 
@@ -47,7 +47,7 @@ Fim
         let nomeCurso = "Desenvolvedor Front-End";
         let matriculaAtiva = true;
         const IDADE_MINIMA = 18;
-        let alunoComIdadeMinima = idadeAluno => IDADE_MINIMA;
+        let alunoComIdadeMinima = idadeAluno >= IDADE_MINIMA;
     2. Porque não estamos entendendo o contexto da variável.
     3. const valor.
     4. Se o aluno tem a idade mínima de participar do curso.
