@@ -4,9 +4,9 @@ Este repositório contém exemplos, exercícios e projetos de estudo em JavaScri
 
 ## Estrutura
 
-- `exemplos/` - códigos e demonstrações de conceitos básicos e intermediários.
-- `projetos/` - pequenos projetos aplicados em JavaScript.
-- `desafios/` - exercícios para praticar lógica de programação.
+- códigos e demonstrações de conceitos básicos e intermediários.
+- pequenos projetos aplicados em JavaScript.
+- exercícios para praticar lógica de programação.
 
 ## Sobre
 

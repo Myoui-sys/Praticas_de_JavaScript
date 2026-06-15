@@ -6,7 +6,7 @@ console.log(questao1);
 let questao2 = 5 === 5 || 5 === "5";
 console.log(questao2);
 
-// Negação (Vinte é maior que cinqueta)
+// Negação (Vinte é maior que cinquenta)
 let questao3 = !(5 > 20);
 console.log(questao3);
 
