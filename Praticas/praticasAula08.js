@@ -97,11 +97,11 @@ rl.question("Digite sua idade: ", (idade) => {
                                 hora = Number(hora);
                                 if (hora >= 0 && hora <= 5) {
                                     console.log("Madrugada");
-                                } else if (hora <= 11) {
+                                } else if (hora >= 6 && hora <= 11) {
                                     console.log("Manhã");
-                                } else if (hora <= 17) {
+                                } else if (hora >= 12 && hora <= 17) {
                                     console.log("Tarde")
-                                } else if (hora <= 23) {
+                                } else if (hora >= 18 && hora <= 23) {
                                     console.log("Noite");
                                 } else {
                                     console.log("Hora inválida");
