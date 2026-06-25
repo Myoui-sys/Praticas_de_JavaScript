@@ -41,3 +41,14 @@ while (tentativas <= 3) {
 }
 
 console.log("Número máximo de tentativas atingido.");
+
+// Estoque
+
+let estoque = 10;
+
+while(estoque > 0) {
+    console.log("Produto vendido!");
+    estoque--;
+}
+
+console.log("Produto esgotado!");
