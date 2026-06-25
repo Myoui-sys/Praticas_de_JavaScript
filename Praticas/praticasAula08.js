@@ -1,3 +1,5 @@
+// THAMIRES, CAIO, EVELLYN E DACYRRÔSE
+
 const readline = require("readline"); // Importando a entrada de usuário
 
 const rl = readline.createInterface({ // Configurando a entrada e saída do readline
@@ -95,15 +97,16 @@ rl.question("Digite sua idade: ", (idade) => {
                             // 7. Informar a hora para exibir o horário
                             rl.question("Digite a hora (de 0 a 23): ", (hora) => {
                                 hora = Number(hora);
-                                if (hora >= 0 && hora <= 5) {
+                                
+                                if (hora >= 0 && hora <= 5) { // Se for entre meia-noite e cinco horas, irá aparecer Madrugada
                                     console.log("Madrugada");
-                                } else if (hora >= 6 && hora <= 11) {
+                                } else if (hora >= 6 && hora <= 11) { // Se for entre seis e onze horas da manhã, irá aparecer Manhã
                                     console.log("Manhã");
-                                } else if (hora >= 12 && hora <= 17) {
+                                } else if (hora >= 12 && hora <= 17) { // Se for entre doze e dezessete horas da tarde, irá aparecer Tarde
                                     console.log("Tarde")
-                                } else if (hora >= 18 && hora <= 23) {
+                                } else if (hora >= 18 && hora <= 23) { // Se for entre dezoito e onze horas da noite, irá aparecer Noite
                                     console.log("Noite");
-                                } else {
+                                } else { // Se for menos que 0 ou um número maior que 23, não vai rolar
                                     console.log("Hora inválida");
                                 }
 
