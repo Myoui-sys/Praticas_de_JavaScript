@@ -52,3 +52,19 @@ while(estoque > 0) {
 }
 
 console.log("Produto esgotado!");
+
+// Atividade
+
+let contador = 0;
+
+while (contador < 5) {
+    console.log("Contador: ", contador);
+    contador++;
+}
+
+let senha = 1;
+
+while (senha <= 10) {
+    console.log("Chamando senha ", senha);
+    senha++;
+}
