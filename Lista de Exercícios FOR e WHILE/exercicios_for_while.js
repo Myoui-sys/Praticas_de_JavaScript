@@ -2,6 +2,7 @@ const readline = require("readline-sync");
 // Decidi utilizar o readline-síncrono para funcionar com while e for, sem necessidade do readline nativo.
 // Instalação: npm install readline-sync
 
+console.log("\n========== Ex 1 - Números de 1 a 10 ==========");
 // 1 - Exiba os números de 1 a 10 utilizando while
 
 let i = 1; // Inicialização: Atribuimos 1 para fazer a contagem de 1 a 10 (Essa variável pode ser atualizada enquanto nossa condição do while for true);
@@ -10,6 +11,7 @@ while (i <= 10) { // Condição: Enquanto nossa variável for menor ou igual a 1
     i++; // Incremento: Adicionamos +1 a cada loop.
 }
 
+console.log("\n========== Ex 2 - Números de 10 a 1 ==========");
 // 2 - Exiba os números de 10 a 1 utilizando while
 
 let j = 10; // Inicialização: Atribuimos 10 para fazer a contagem de 10 a 1 (Essa variável pode ser atualizada enquanto nossa condição do while for true);
@@ -18,6 +20,7 @@ while (j >= 1) { // Condição: Enquanto nossa variável for maior ou igual a 1,
     j--; // Decremento: Tiramos -1 a cada loop.
 }
 
+console.log("\n========== Ex 3 - Números pares de 2 a 20 ==========");
 // 3 - Exiba apenas os números pares de 2 a 20 utilizando while
 
 let par = 2; // Inicialização: Atribuimos 2 para exibir os números pares (Essa variável pode ser atualizada enquanto nossa condição do while for true);
@@ -26,6 +29,7 @@ while (par <= 20) { // Condição: Enquanto nossa variável for menor ou igual a
     par += 2; // Incremento: Pulamos de 2 em 2 para exibir apenas os pares.
 }
 
+console.log("\n========== Ex 4 - Soma de 1 a 100 ==========");
 // 4 - Calcule e exiba a soma dos números de 1 a 100 utilizando while
 
 let k = 1; // Inicialização: Atribuimos 1 para percorrer os números de 1 a 100;
@@ -38,7 +42,7 @@ while (k <= 100) { // Condição: Enquanto nossa variável for menor ou igual a 
 
 console.log(soma); // Exibe o resultado final da soma após o loop encerrar (resultado: 5050);
 
-
+console.log("\n========== Ex 5 - Tabuada ==========");
 // 5. Receba um número e exiba a tabuada desse número (1 a 10) utilizando while
 
 let numero = Number(readline.question("Digite um numero para a tabuada: ")); // Entrada: Recebemos o número do usuário e convertemos para Number, pois o readline retorna string;
@@ -50,6 +54,7 @@ while (tabuada <= 10) { // Condição: Enquanto nossa variável for menor ou igu
     tabuada++; // Incremento: Adicionamos +1 a cada loop.
 }
 
+console.log("\n========== Ex 6 - Verificação de Senha ==========");
 // 6. Receba uma senha e continue pedindo outra enquanto ela for diferente de '1234'. Ao acertar, exiba 'Acesso permitido'.
 
 let senha = readline.question("Digite a senha: "); // Entrada: Recebemos a primeira tentativa antes de entrar no loop;
@@ -61,8 +66,8 @@ while (senha !== "1234") { // Condição: Enquanto a senha for diferente de '123
 
 console.log("Acesso permitido."); // Só chega aqui quando a condição do while for false (senha correta);
 
+console.log("\n========== Ex 7 - Contagem Regressiva ==========");
 // 7. Receba um número e exiba uma contagem regressiva desse número até 0 utilizando while
-
 let numeroRegressivo = Number(readline.question("Digite um numero: ")); // Entrada: Recebemos um número;
 
 while (numeroRegressivo >= 0) { // Condição: Enquanto o número for maior ou igual a 0, o loop vai rodar;
@@ -70,3 +75,21 @@ while (numeroRegressivo >= 0) { // Condição: Enquanto o número for maior ou i
     numeroRegressivo--; // Decremento: Tiramos -1 a cada loop.
 }
 
+console.log("\n========== Ex 8 - Números de 1 a 20 ==========");
+// 8. Exiba os números de 1 a 20 utilizando for
+
+for (let q = 1; q <= 20; q++) {
+    console.log(q);
+}
+
+// 9. Exiba os números ímpares de 1 a 30 utilizando for
+
+// 10. Exiba a tabuada do número 7 utilizando for
+
+// 11. Calcule a soma dos números pares de 1 a 50 utilizando for
+
+// 12. Exiba uma contagem regressiva de 10 até 0 utilizando for
+
+// 13. Receba um número e exiba todos os números de 1 até esse número, informando se cada um é par ou ímpar, utilizando for
+
+// 14. Receba um número e informe se ele é primo utilizando for
