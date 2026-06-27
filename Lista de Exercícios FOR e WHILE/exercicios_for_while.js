@@ -71,7 +71,7 @@ console.log("\n========== Ex 7 - Contagem Regressiva ==========");
 let numeroRegressivo = Number(readline.question("Digite um numero: ")); // Entrada: Recebemos um número;
 
 while (numeroRegressivo >= 0) { // Condição: Enquanto o número for maior ou igual a 0, o loop vai rodar;
-    console.log(numeroRegressivo)
+    console.log(numeroRegressivo);
     numeroRegressivo--; // Decremento: Tiramos -1 a cada loop.
 }
 
@@ -101,8 +101,32 @@ for (let tabuadaNumSete = 1; tabuadaNumSete <= 10; tabuadaNumSete++) {
 console.log("\n========== Ex 11 - Soma dos números pares de 1 a 50 ==========");
 // 11. Calcule a soma dos números pares de 1 a 50 utilizando for
 
+let somaPares = 0; // Acumulador: começa em 0 e vai recebendo a soma de cada número par;
+
+for (let numeroPar = 2; numeroPar <= 50; numeroPar += 2) { // Inicialização: começa em 2 (primeiro par) | Incremento: +2 para pular os ímpares;
+    somaPares += numeroPar; // Acumulação: adicionamos o valor atual à soma a cada iteração;
+}
+
+console.log(somaPares); // Exibe o resultado final após o loop encerrar (resultado: 650);
+
+console.log("\n========== Ex 12 - Contagem regressiva de 10 até 0 ==========");
 // 12. Exiba uma contagem regressiva de 10 até 0 utilizando for
 
+for (let r = 10; r >= 0; r--) {
+    console.log(r);
+}
+
+console.log("\n========== Ex 13 - Ímpar ou Par ==========");
 // 13. Receba um número e exiba todos os números de 1 até esse número, informando se cada um é par ou ímpar, utilizando for
 
+let numeroQuestionTreze = Number(readline.question("Digite um numero: "));
+for (let x = 1; x <= numeroQuestionTreze; x++) { // Condição: roda enquanto x for menor ou igual ao número digitado;
+    if (x % 2 === 0) { // Verificação: checamos x (o contador), não o número digitado;
+        console.log(x, "é par");
+    } else {
+        console.log(x, "é ímpar");
+    }
+}
+
+console.log("\n========== Ex 14 - Número Primo ==========");
 // 14. Receba um número e informe se ele é primo utilizando for
