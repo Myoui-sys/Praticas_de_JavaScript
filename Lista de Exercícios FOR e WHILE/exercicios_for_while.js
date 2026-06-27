@@ -60,3 +60,13 @@ while (senha !== "1234") { // Condição: Enquanto a senha for diferente de '123
 }
 
 console.log("Acesso permitido."); // Só chega aqui quando a condição do while for false (senha correta);
+
+// 7. Receba um número e exiba uma contagem regressiva desse número até 0 utilizando while
+
+let numeroRegressivo = Number(readline.question("Digite um numero: ")); // Entrada: Recebemos um número;
+
+while (numeroRegressivo >= 0) { // Condição: Enquanto o número for maior ou igual a 0, o loop vai rodar;
+    console.log(numeroRegressivo)
+    numeroRegressivo--; // Decremento: Tiramos -1 a cada loop.
+}
+
