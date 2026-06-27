@@ -82,10 +82,23 @@ for (let q = 1; q <= 20; q++) {
     console.log(q);
 }
 
+console.log("\n========== Ex 9 - Números ímpares de 1 a 30 ==========");
 // 9. Exiba os números ímpares de 1 a 30 utilizando for
+for (let imparFor = 1; imparFor <= 30; imparFor++) {
+    if (imparFor % 2 !== 0) {
+        console.log(imparFor);
+    }
+}
 
+console.log("\n========== Ex 10 - Tabuada do número 7 ==========");
 // 10. Exiba a tabuada do número 7 utilizando for
 
+for (let tabuadaNumSete = 1; tabuadaNumSete <= 10; tabuadaNumSete++) {
+    let resultadoTabuada = 7 * tabuadaNumSete;
+    console.log(7, " x ", tabuadaNumSete, " = ", resultadoTabuada);
+}
+
+console.log("\n========== Ex 11 - Soma dos números pares de 1 a 50 ==========");
 // 11. Calcule a soma dos números pares de 1 a 50 utilizando for
 
 // 12. Exiba uma contagem regressiva de 10 até 0 utilizando for
