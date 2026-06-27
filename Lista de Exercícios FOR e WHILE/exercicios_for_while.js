@@ -68,7 +68,8 @@ console.log("Acesso permitido."); // Só chega aqui quando a condição do while
 
 console.log("\n========== Ex 7 - Contagem Regressiva ==========");
 // 7. Receba um número e exiba uma contagem regressiva desse número até 0 utilizando while
-let numeroRegressivo = Number(readline.question("Digite um numero: ")); // Entrada: Recebemos um número;
+
+let numeroRegressivo = Number(readline.question("Digite um numero: ")); // Entrada: Recebemos o número do usuário e convertemos para Number, pois o readline retorna string;
 
 while (numeroRegressivo >= 0) { // Condição: Enquanto o número for maior ou igual a 0, o loop vai rodar;
     console.log(numeroRegressivo);
@@ -78,14 +79,15 @@ while (numeroRegressivo >= 0) { // Condição: Enquanto o número for maior ou i
 console.log("\n========== Ex 8 - Números de 1 a 20 ==========");
 // 8. Exiba os números de 1 a 20 utilizando for
 
-for (let q = 1; q <= 20; q++) {
+for (let q = 1; q <= 20; q++) { // Inicialização: q começa em 1 | Condição: roda enquanto q for menor ou igual a 20 | Incremento: +1 a cada loop;
     console.log(q);
 }
 
 console.log("\n========== Ex 9 - Números ímpares de 1 a 30 ==========");
 // 9. Exiba os números ímpares de 1 a 30 utilizando for
-for (let imparFor = 1; imparFor <= 30; imparFor++) {
-    if (imparFor % 2 !== 0) {
+
+for (let imparFor = 1; imparFor <= 30; imparFor++) { // Inicialização: começa em 1 | Condição: roda enquanto imparFor for menor ou igual a 30 | Incremento: +1 a cada loop;
+    if (imparFor % 2 !== 0) { // Verificação: se o resto da divisão por 2 for diferente de 0, o número é ímpar;
         console.log(imparFor);
     }
 }
@@ -93,8 +95,8 @@ for (let imparFor = 1; imparFor <= 30; imparFor++) {
 console.log("\n========== Ex 10 - Tabuada do número 7 ==========");
 // 10. Exiba a tabuada do número 7 utilizando for
 
-for (let tabuadaNumSete = 1; tabuadaNumSete <= 10; tabuadaNumSete++) {
-    let resultadoTabuada = 7 * tabuadaNumSete;
+for (let tabuadaNumSete = 1; tabuadaNumSete <= 10; tabuadaNumSete++) { // Inicialização: começa em 1 | Condição: roda enquanto tabuadaNumSete for menor ou igual a 10 | Incremento: +1 a cada loop;
+    let resultadoTabuada = 7 * tabuadaNumSete; // Cálculo: Multiplicamos 7 pelo contador atual da tabuada;
     console.log(7, " x ", tabuadaNumSete, " = ", resultadoTabuada);
 }
 
@@ -103,7 +105,7 @@ console.log("\n========== Ex 11 - Soma dos números pares de 1 a 50 ==========")
 
 let somaPares = 0; // Acumulador: começa em 0 e vai recebendo a soma de cada número par;
 
-for (let numeroPar = 2; numeroPar <= 50; numeroPar += 2) { // Inicialização: começa em 2 (primeiro par) | Incremento: +2 para pular os ímpares;
+for (let numeroPar = 2; numeroPar <= 50; numeroPar += 2) { // Inicialização: começa em 2 (primeiro par) | Condição: roda enquanto numeroPar for menor ou igual a 50 | Incremento: +2 para pular os ímpares;
     somaPares += numeroPar; // Acumulação: adicionamos o valor atual à soma a cada iteração;
 }
 
@@ -112,21 +114,23 @@ console.log(somaPares); // Exibe o resultado final após o loop encerrar (result
 console.log("\n========== Ex 12 - Contagem regressiva de 10 até 0 ==========");
 // 12. Exiba uma contagem regressiva de 10 até 0 utilizando for
 
-for (let r = 10; r >= 0; r--) {
+for (let r = 10; r >= 0; r--) { // Inicialização: r começa em 10 | Condição: roda enquanto r for maior ou igual a 0 | Decremento: -1 a cada loop;
     console.log(r);
 }
 
 console.log("\n========== Ex 13 - Ímpar ou Par ==========");
 // 13. Receba um número e exiba todos os números de 1 até esse número, informando se cada um é par ou ímpar, utilizando for
 
-let numeroQuestionTreze = Number(readline.question("Digite um numero: "));
-for (let x = 1; x <= numeroQuestionTreze; x++) { // Condição: roda enquanto x for menor ou igual ao número digitado;
-    if (x % 2 === 0) { // Verificação: checamos x (o contador), não o número digitado;
+let numeroQuestionTreze = Number(readline.question("Digite um numero: ")); // Entrada: Recebemos o número do usuário e convertemos para Number, pois o readline retorna string;
+
+for (let x = 1; x <= numeroQuestionTreze; x++) { // Inicialização: x começa em 1 | Condição: roda enquanto x for menor ou igual ao número digitado | Incremento: +1 a cada loop;
+    if (x % 2 === 0) { // Verificação: se o resto da divisão por 2 for 0, o número é par;
         console.log(x, "é par");
     } else {
-        console.log(x, "é ímpar");
+        console.log(x, "é ímpar"); // Caso contrário, é ímpar;
     }
 }
+
 
 console.log("\n========== Ex 14 - Número Primo ==========");
 // 14. Receba um número e informe se ele é primo utilizando for
