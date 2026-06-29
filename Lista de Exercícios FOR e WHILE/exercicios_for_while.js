@@ -40,7 +40,7 @@ while (k <= 100) { // Condição: Enquanto nossa variável for menor ou igual a 
     k++; // Incremento: Adicionamos +1 a cada loop.
 }
 
-console.log(soma); // Exibe o resultado final da soma após o loop encerrar (resultado: 5050);
+console.log(soma); // Exibe o resultado final da soma após o loop encerrar
 
 console.log("\n========== Ex 5 - Tabuada ==========");
 // 5. Receba um número e exiba a tabuada desse número (1 a 10) utilizando while
@@ -131,6 +131,21 @@ for (let x = 1; x <= numeroQuestionTreze; x++) { // Inicialização: x começa e
     }
 }
 
-
 console.log("\n========== Ex 14 - Número Primo ==========");
 // 14. Receba um número e informe se ele é primo utilizando for
+
+let numeroPrimo = Number(readline.question("Digite um numero: ")); // Entrada: Recebemos o número do usuário e convertemos para Number, pois o readline retorna string;
+
+let divisores = 0; // Contador: começa em 0 e registra quantos divisores o número possui durante o loop;
+
+for (let i = 1; i <= numeroPrimo; i++) { // Inicialização: i começa em 1 | Condição: roda enquanto i for menor ou igual ao número digitado | Incremento: +1 a cada loop;
+    if (numeroPrimo % i === 0) { // Verificação: se o resto da divisão de numeroPrimo por i for 0, então i é um divisor;
+        divisores++; // Contagem: incrementamos o contador sempre que encontramos um novo divisor;
+    }
+}
+
+if (divisores === 2) { // Verificação: um número primo tem exatamente 2 divisores (1 e ele mesmo);
+    console.log("É primo.");
+} else {
+    console.log("Não é primo."); // Caso contrário, possui mais de 2 divisores e não é primo;
+}
