@@ -4,7 +4,9 @@ function titulo() {
 
 titulo();
 
+console.log("\n");
 console.log("|".repeat(100));
+console.log("\n");
 
 function menu() {
     console.log("Iniciar");
@@ -15,7 +17,9 @@ function menu() {
 
 menu();
 
+console.log("\n");
 console.log("|".repeat(100));
+console.log("\n");
 
 function media(nota1, nota2) {
     return (nota1 + nota2) / 2;
