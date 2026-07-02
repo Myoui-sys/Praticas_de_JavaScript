@@ -35,3 +35,24 @@ function verificarNumero(numero) {
 
 let valido = verificarNumero(42);
 console.log("Válido: ", valido);
+
+let frutas = ["Maçã", "banana", "uva"];
+
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+let lista = ["Caio", "Evellyn", "Dacy"];
+
+console.log(lista);
+
+let numerosSorteados = [42, 17, 63, 8, 51];
+console.log(numerosSorteados.length); 
+
+let sorteados = [];
+sorteados.push(42);
+sorteados.push(17);
+sorteados.push(63);
+
+console.log(sorteados);
+console.log(sorteados.length);
